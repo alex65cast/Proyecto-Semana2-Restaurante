@@ -1,4 +1,4 @@
-#pedirRecoger{
+#pedirRecoger {
 
     display: flex;
     flex-direction: row;
@@ -7,30 +7,38 @@
     justify-content: space-around;
 
     background-color: black;
-    
+
 }
 
-.imagenes{
+
+
+.imagenes {
 
     color: white;
 }
 
-a{
+#logoPollos{
+
+    width:110px;
+    height:110px;
+
+}
+a {
 
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-style: italic;
 }
 
-p,h5{
+p,h5 {
 
     color: black;
 }
 
-#button-up{
+#button-up {
     width: 60px;
     height: 60px;
-    background: #d2d9e0;
+    background: #bcbcbd;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +53,128 @@ p,h5{
     transition: all 300ms ease;
 }
 
-#button-up:hover{
+#button-up:hover {
     transform: scale(1.1);
     border-color: rgba(34, 33, 33, 0.5);
+}
+
+.contact_form {
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #e6e6e6;
+    padding-left: 30px;
+}
+
+
+input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #bd14140e;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+label {
+    display: block;
+    float: center;
+}
+
+
+ #enviar{
+    border-radius: 10%;
+    background-color: black;
+    width: 5em;
+    height: 2em;
+    margin-left: 19em;
+
+ }
+
+ #textoEnviar{
+
+    color: white;
+ }
+
+span {
+    color: #ab4493;
+}
+
+
+.aviso {
+    font-size: 13px;
+    color: #0e0e0e;
+}
+
+
+h1 {
+    font-size: 39px;
+    text-align: letf;
+    padding-bottom: 20px;
+    color: #000000;
+}
+
+
+h3 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e;
+}
+
+
+p {
+    font-size: 14px;
+    color: #0e0e0e;
+}
+
+.btn{
+
+    width: 5em;
+    height: 3em;
+    border: white;
+}
+
+
+::-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+    color: #a8a8a8;
+}
+
+
+.formulario input:focus {
+    outline: 0;
+    border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus {
+    outline: 0;
+    border: 1px solid #97d848;
 }

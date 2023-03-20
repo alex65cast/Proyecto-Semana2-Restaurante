@@ -1,248 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My first Bootsrap</title>
 
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My first Bootsrap</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"
-  ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="CSS/styles.css">
-  </head>
- 
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="img/pollosHermanosLogo.png" alt="Logo" width="110" height="110" class="d-inline-block align-text-top">
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="CSS/styles.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img id="logoPollos" src="img/pollosHermanosLogo.png" alt="Logo"
+              class="d-inline-block align-text-top" />
+          </a>
+        </div>
+      </nav>
+      <a class="navbar-brand" href="index.html">POLLOS HERMANOS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#carta">NUESTRA CARTA <img
+                src="img/menu-del-restaurante.png" alt="" /></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CUPONES <img src="img/cupon-de-descuento.png" alt="cupones" />
             </a>
-          </div>
-        </nav>
-        <a class="navbar-brand" href="#">POLLOS HERMANOS</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#carta">NUESTRA CARTA <img src="img/menu-del-restaurante.png" alt=""></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                CUPONES <img src="img/cupon-de-descuento.png" alt="cupones">
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Ver ofertas</a></li>
-                <li><a class="dropdown-item" href="#">Canjear cupon</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <img src="img/alimento.png" alt="alimento">
-            <input class="form-control me-2" type="search" placeholder="Busca aquí" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ver ofertas</a></li>
+              <li><a class="dropdown-item" href="#">Canjear cupon</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO <img
+                src="img/atencion-al-cliente.png" alt="atencion-al-cliente" /></a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Busca aquí" aria-label="Search" />
+          <button class="btn btn-outline-success"> <img src="img/alimento.png" alt="alimento" />
+          </button>
+        </form>
       </div>
-    </nav>
-
-
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/muestraPollos.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>¡¡VISITA POLLOS HERMANOS!!</h5>
-            <p>EL MEJOR POLLO AL MEJOR PRECIO.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/visitaPollosHermanos.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>UN EQUIPO DE 10</h5>
-            <p>UNOS EMPLEADOS A LA ALTURA DE NUESTRO POLLO</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/pollo-frito-vitoria-broaster.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+  </nav>
 
-    <div id="pedirRecoger" class="alert alert-dark">
-        <div class="imagenes">A DOMICILIO <img src="img/repartidor.png" alt="repartido"></div>
-        <div class="imagenes">PARA RECOGER <img src="img/restaurante.png" alt="restaurante"></div>
-        <div class="imagenes">PIDE YA <img src="img/ordenar-comida.png" alt="ordenar-comida"></div>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
     </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/muestraPollos.jpg" class="d-block w-100" alt="muestraPollos" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>¡¡VISITA POLLOS HERMANOS!!</h5>
+          <p>EL MEJOR POLLO AL MEJOR PRECIO.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/visitaPollosHermanos.jpg" class="d-block w-100" alt="visitaPollosHermanos" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>UN EQUIPO DE 10</h5>
+          <p>UNOS EMPLEADOS A LA ALTURA DE NUESTRO POLLO</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/pollo-frito-vitoria-broaster.jpg" class="d-block w-100" alt="pollo-frito-vitoria-broaster" />
+        <div class="carousel-caption d-none d-md-block"></div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <div id="carta" class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100">
-          <img src="img/menu1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="img/menu2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="img/menu3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="img/menu4.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="img/menu5.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="img/menu6.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="img/menu7.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="img/menu8.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="img/menu9.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="img/menu10.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="img/menu11.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="img/menu12.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
+  <div id="pedirRecoger" class="alert alert-dark">
+    <div class="imagenes">
+      A DOMICILIO <img src="img/repartidor.png" alt="repartido" />
+    </div>
+    <div class="imagenes">
+      PARA RECOGER <img src="img/restaurante.png" alt="restaurante" />
+    </div>
+    <div class="imagenes">
+      PIDE YA <img src="img/ordenar-comida.png" alt="ordenar-comida" />
+    </div>
+  </div>
+
+  <div id="carta" class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/menu1.jpg" class="card-img-top" alt="menu1" />
+        <div class="card-body">
+          <h5 class="card-title">Especial de cuatro piezas</h5>
+          <p class="card-text">
+            Elección de Campero frito, a la parrilla o ambos (frito y
+            parrilla). Incluye 4 piezas de pollo, 2 guarniciones y elección de
+            tortilla o panecillo.
+          </p>
+          <p class="card-text">17€</p>
         </div>
       </div>
     </div>
-    <div id="button-up">
-      <i class="fas fa-chevron-up"><img src="img/punta-de-flecha-hacia-arriba.png" alt="" srcset=""></i>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/menu2.jpg" class="card-img-top" alt="menu2" />
+        <div class="card-body">
+          <h5 class="card-title">Campero Chicken Sandwich Meal</h5>
+          <p class="card-text">
+            ¡Obtén el sabor único de nuestro pollo frito en un delicioso
+            sándwich! Empanamos el filete de carne 100% blanca en nuestro
+            condimento tradicional, luego lo colocamos encima de tres
+            encurtidos dulces y lo servimos en un panecillo brioche suave con
+            mantequilla. Pruebe uno hoy.
+          </p>
+          <p class="card-text">8.5€</p>
+        </div>
+      </div>
     </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/menu3.jpg" class="card-img-top" alt="menu3" />
+        <div class="card-body">
+          <h5 class="card-title">12 Piece Family Meal</h5>
+          <p class="card-text">
+            Su Elección de Pollo Campero Frito o Asado. Incluye 3
+            acompañamientos familiares y su elección de tortillas o panecillos
+            para la cena.
+          </p>
+          <p class="card-text">16€</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/menu4.jpg" class="card-img-top" alt="menu4" />
+        <div class="card-body">
+          <h5 class="card-title">Ensalada De Pechuga De Pollo</h5>
+          <p class="card-text">
+            Su elección de pollo frito campero, mezcla de primavera, maíz y
+            pimientos asados, zanahorias ralladas, tomates uva y queso feta.
+            Incluye aderezo.
+          </p>
+          <p class="card-text">5.5€</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/menu5.jpg" class="card-img-top" alt="menu5" />
+        <div class="card-body">
+          <h5 class="card-title">Campero Bowl</h5>
+          <p class="card-text">
+            Nuestros sabores más frescos remezclados en un nuevo clásico. Cada
+            tazón contiene arroz campero, frijoles camperos*, mezcla de
+            primavera, maíz y pimientos asados, tomates cherry, puré de
+            aguacate, queso feta y su elección de pollo frito.
+          </p>
+          <p class="card-text">10€</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/menu6.jpg" class="card-img-top" alt="menu6" />
+        <div class="card-body">
+          <h5 class="card-title">Empanada Individual</h5>
+          <p class="card-text">
+            Hecho a mano diariamente y empacado con nuestro pollo exclusivo.
+          </p>
+          <p class="card-text">3€</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/menu7.jpg" class="card-img-top" alt="menu7" />
+        <div class="card-body">
+          <h5 class="card-title">Camperitos</h5>
+          <p class="card-text">
+            ¡Nuestros Camperitos están empanizados con el sabor único de
+            nuestro pollo Campero Fried y se fríen frescos todos los días!
+            Obtenga 30 nuggets de carne 100 % blanca. Incluye Elección de
+            Salsa.
+          </p>
+          <p class="card-text">7€</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/menu8.jpg" class="card-img-top" alt="menu8" />
+        <div class="card-body">
+          <h5 class="card-title">20 Piezas de pollo</h5>
+          <p class="card-text">
+            20 Piezas de Pollo. Su Elección de Pollo Campero Frito o Asado.
+          </p>
+          <p class="card-text">15€</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/menu9.jpg" class="card-img-top" alt="menu9" />
+        <div class="card-body">
+          <h5 class="card-title">Ensalada de col</h5>
+          <p class="card-text">
+            Hecho fresco todos los días con repollo en rodajas, pimientos
+            morrones cortados en cubitos y aderezo original de Campero
+          </p>
+          <p class="card-text">5€</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/menu10.jpg" class="card-img-top" alt="menu10" />
+        <div class="card-body">
+          <h5 class="card-title">Salsa adicional</h5>
+          <p class="card-text">
+            Elección de salsa para mojar (2 oz): Salsa Campero Signature,
+            Honey Mustard, BBQ, Ranch o Buffalo
+          </p>
+          <p class="card-text">2€</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/menu11.jpg" class="card-img-top" alt="menu11" />
+        <div class="card-body">
+          <h5 class="card-title">Tortilla adicional</h5>
+          <p class="card-text">Tortillas Frescas</p>
+          <p class="card-text">2.5€</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/menu12.jpg" class="card-img-top" alt="menu12" />
+        <div class="card-body">
+          <h5 class="card-title">Vaso de refresco</h5>
+          <p class="card-text">*Bebidas rellenables en tienda</p>
+          <p class="card-text">3.5€</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="js/main.js"></script>
-  </body>
+  <div id="button-up">
+    <i class="fas fa-chevron-up"><img src="img/punta-de-flecha-hacia-arriba.png" alt="flechaArriba"/></i>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
