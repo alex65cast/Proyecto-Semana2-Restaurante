@@ -8,7 +8,7 @@ Para ver como es pulsa en este enlace: https://alex65cast.github.io/Proyecto-Sem
 
 Para realizar este proyecto se ha usado el IDE de Visual Studio Code y Bootstrap.
 
-* [VisualStudioCode](https://code.visualstudio.com/) - El framework web usado
+* [VisualStudioCode](https://code.visualstudio.com/) - El IDE web usado
 * [Bootstrap](https://getbootstrap.com/) - Biblioteca de dependencias
 
 ## Funcionalidades ⚙️

@@ -1,3 +1,9 @@
+body{
+
+    margin: 0;
+    padding: 0;
+
+}
 #pedirRecoger {
 
     display: flex;
@@ -17,12 +23,13 @@
     color: white;
 }
 
-#logoPollos{
+#logoPollos {
 
-    width:110px;
-    height:110px;
+    width: 110px;
+    height: 110px;
 
 }
+
 a {
 
     font-family: Arial, Helvetica, sans-serif;
@@ -30,7 +37,8 @@ a {
     font-style: italic;
 }
 
-p,h5 {
+p,
+h5 {
 
     color: black;
 }
@@ -105,19 +113,19 @@ label {
 }
 
 
- #enviar{
+#enviar {
     border-radius: 10%;
     background-color: black;
     width: 5em;
     height: 2em;
     margin-left: 19em;
 
- }
+}
 
- #textoEnviar{
+#textoEnviar {
 
     color: white;
- }
+}
 
 span {
     color: #ab4493;
@@ -150,7 +158,7 @@ p {
     color: #0e0e0e;
 }
 
-.btn{
+.btn {
 
     width: 5em;
     height: 3em;
