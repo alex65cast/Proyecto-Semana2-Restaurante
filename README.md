@@ -2,7 +2,7 @@
 
 Se ha realizado un proyecto de la página de un restaurante de comida rápida con HTML y CSS
 
-Para ver como es pulsa en este enlace: https://alex65cast.github.io/Proyecto-Semana2-Restaurante/index.html
+Para ver como es pulsa en este enlace: https://alex65cast.github.io/Proyecto-Semana2-Restaurante/
 
 ## Herramientas 🚀
 
